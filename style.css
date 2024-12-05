@@ -1,0 +1,294 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Isidora, sans-serif;
+}
+
+body {
+  background-color: #370751;
+  color: #370751;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(232, 153, 150, 0.7), rgba(232, 153, 150, 0.7)), url('https://i.imgur.com/wa4qCmt.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(232, 153, 150, 0.7), rgba(232, 153, 150, 0.7)), url('https://i.imgur.com/wa4qCmt.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem; /* Tamaño más grande */
+  font-weight: bold; /* Negrita */
+  color: #370751; /* Color de texto */
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  font-size: 1.5rem; /* Tamaño más grande */
+  font-weight: 500; /* Negrita moderada */
+  color: #370751; /* Color de texto */
+}
+
+.hero-content .cta-button {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: #E89996;
+  color: #370751;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold; /* Botón en negrita */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-content .cta-button:hover {
+  background-color: #EFEBE0;
+}
+
+
+/* Carousel Section */
+.carousel-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: center; /* Asegura que las tarjetas estén alineadas verticalmente */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+  gap: 2rem;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+.carousel-item {
+  background-color: #E89996;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-width: 300px;
+  max-width: 300px; /* Tamaño consistente */
+  height: 450px; /* Fijar altura */
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%; /* Imagen ocupa el ancho completo */
+  height: 200px; /* Fijar altura para imágenes */
+  object-fit: cover; /* Asegura que las imágenes no se deformen */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.carousel-item h3 {
+  margin-bottom: 1rem;
+  color: #370751;
+}
+
+.carousel-item p {
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  margin-top: auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #370751;
+  color: #EFEBE0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #EFEBE0;
+}
+
+/* Sección Sobre Tabia */
+.about-tabia {
+  background-color: #EFEBE0; /* Fondo claro */
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.about-content h2 {
+  color: #370751; /* Título en morado oscuro */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  color: #370751; /* Texto en morado oscuro */
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Principios */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.principle-item {
+  text-align: center;
+}
+
+.principle-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.principle-item h3 {
+  color: #A439F7; /* Título en morado vibrante */
+  margin-bottom: 0.5rem;
+}
+
+.principle-item p {
+  color: #370751; /* Texto en morado oscuro */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Frase Inspiracional */
+.inspirational-phrase {
+  text-align: center; /* Centrar texto */
+  padding: 2rem;
+  background-color: #E89996; /* Fondo rosa claro */
+  color: #370751; /* Texto en morado oscuro */
+}
+
+.inspirational-phrase h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.inspirational-phrase p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+/* Sección El Equipo */
+.team-section {
+  background-color: #370751; /* Fondo morado oscuro */
+  color: #EFEBE0; /* Texto claro */
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #EFEBE0;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 300px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Convierte la imagen en un círculo */
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega un leve sombreado */
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #E89996; /* Título en rosa */
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #EFEBE0; /* Texto claro */
+  line-height: 1.5;
+}
+
+/* Sección del Logo */
+.logo-section {
+  background-color: #EFEBE0; /* Fondo claro */
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.logo-section img {
+  width: 200px;
+  height: auto;
+  display: block; /* Centra la imagen si se usa junto con margin auto */
+  margin: auto;   /* Centra horizontalmente */
+}
+
+/* Footer */
+.footer {
+  background-color: #370751; /* Fondo morado oscuro */
+  color: #EFEBE0; /* Texto claro */
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-links a img:hover {
+  transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+}
