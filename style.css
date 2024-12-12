@@ -14,7 +14,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: linear-gradient(rgba(232, 153, 150, 0.7), rgba(232, 153, 150, 0.7)), url('https://github.com/icrs1990/Tabia-Kit/blob/main/assets/Kit%20recuerdos.png?raw=true');
+  background-image: linear-gradient(rgba(232, 153, 150, 0.7), rgba(232, 153, 150, 0.7)), url('https://github.com/icrs1990/Tabia-Landing/blob/main/assets/hero.jpg?raw=true');
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -23,24 +23,23 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: bold;
   color: #370751;
-  margin-bottom: 1rem; /* Espacio entre el título y el texto */
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
-  margin-top: 1rem;
-  margin-bottom: 2rem; /* Espacio entre el texto y el botón */
   font-size: 1.5rem;
   color: #ffffff;
+  margin-bottom: 1.5rem;
 }
 
 .hero-content .cta-button {
-  margin-top: 2rem; /* Cambia a un valor mayor si aún está muy cerca */
   padding: 1rem 2rem;
   background-color: #370751;
   color: #ffffff;
@@ -50,13 +49,11 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-
 }
 
 .hero-content .cta-button:hover {
   background-color: #5b2a87;
 }
-
 
 /* Sección Sobre Tabia */
 .about-tabia {
@@ -127,54 +124,67 @@ body {
   font-weight: bold;
 }
 
-/* Estilos del carrusel */
-.photo-carousel {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+/* Product Kit Section */
+.product-kit {
+  background-color: #f7f4f9;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.product-kit h2 {
+  font-size: 2.5rem;
+  color: #370751;
+  margin-bottom: 1.5rem;
+}
+
+.product-kit p {
+  font-size: 1.2rem;
+  color: #370751;
   margin-bottom: 2rem;
 }
 
+.photo-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  scroll-behavior: smooth;
+}
+
 .photo-carousel img {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: auto;
   border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-}
-
-.photo-carousel img:hover {
-  transform: scale(1.1);
-}
-
-/* Estilo para las features (cards) */
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 2rem auto;
-  max-width: 800px;
-}
-
-.feature-item {
-  background-color: #E89996;
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
 .feature-item h3 {
-  margin-bottom: 1rem;
   color: #370751;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .feature-item p {
-  color: #370751;
-  font-size: 1rem;
+  color: #5b2a87;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
-/* Estilos del botón y precio */
 .product-cta {
   text-align: center;
   margin-top: 2rem;
@@ -182,20 +192,19 @@ body {
 
 .product-cta p {
   font-size: 1.2rem;
-  font-weight: bold;
   color: #370751;
   margin-bottom: 1rem;
 }
 
 .product-cta .cta-button {
+  padding: 0.8rem 1.5rem;
   background-color: #370751;
   color: #ffffff;
-  padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .product-cta .cta-button:hover {
