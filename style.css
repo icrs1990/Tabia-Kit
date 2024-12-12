@@ -54,66 +54,6 @@ body {
   background-color: #5b2a87;
 }
 
-/* Carousel Section */
-.carousel-section {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.carousel {
-  display: flex;
-  justify-content: center; /* Centra las tarjetas horizontalmente */
-  align-items: center; /* Asegura que las tarjetas estén alineadas verticalmente */
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas si es necesario */
-  gap: 2rem;
-  margin: 1rem auto;
-  max-width: 90%;
-}
-
-.carousel-item {
-  background-color: #E89996;
-  border-radius: 8px;
-  padding: 1.5rem;
-  min-width: 300px;
-  flex-shrink: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column; /* Apilar los elementos verticalmente */
-  align-items: center; /* Centrar horizontalmente */
-  text-align: center;
-  justify-content: space-between; /* Espaciado uniforme */
-  height: 400px; /* Asegura que todas las cards tengan la misma altura */
-}
-
-.carousel-item img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  object-fit: cover; /* Ajusta la imagen dentro del espacio disponible */
-  height: 150px; /* Asegura que todas las imágenes tengan la misma altura */
-}
-
-.carousel-item h3 {
-  margin-bottom: 0.5rem;
-  color: #370751;
-}
-
-.carousel-item p {
-  margin-bottom: 0.5rem;
-}
-
-.cta-button {
-  margin-top: auto; /* Empuja el botón hacia abajo */
-  padding: 0.8rem 1.5rem;
-  background-color: #370751;
-  color: #EFEBE0;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
 
 /* Sección Sobre Tabia */
 .about-tabia {
@@ -184,7 +124,66 @@ body {
   font-weight: bold;
 }
 
+/* Producto Kit */
+.product-kit {
+  background-color: #f7f4f9;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
 
+.product-kit h2 {
+  font-size: 2.5rem;
+  color: #370751;
+}
+
+.product-kit p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.kit-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.kit-details img {
+  width: 300px;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.kit-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.kit-info ul li {
+  font-size: 1.1rem;
+  color: #370751;
+  margin-bottom: 0.5rem;
+}
+
+.kit-info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #370751;
+}
+
+.kit-info .cta-button {
+  background-color: #370751;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.kit-info .cta-button:hover {
+  background-color: #5b2a87;
+}
 
 /* Sección El Equipo */
 .team-section {
