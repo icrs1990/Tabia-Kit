@@ -125,60 +125,51 @@ body {
 }
 
 /* Producto Kit */
+/* Ajuste para el diseño del Kit */
 .product-kit {
   background-color: #f7f4f9;
   padding: 3rem 1.5rem;
   text-align: center;
 }
 
-.product-kit h2 {
-  font-size: 2.5rem;
-  color: #370751;
-}
-
-.product-kit p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
 .kit-details {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .kit-details img {
-  width: 300px;
+  max-width: 300px;
   border-radius: 8px;
-  margin-right: 2rem;
 }
 
 .kit-info ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .kit-info ul li {
-  font-size: 1.1rem;
+  margin-bottom: 1rem;
   color: #370751;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .kit-info p {
   font-size: 1.2rem;
-  font-weight: bold;
   color: #370751;
+  margin: 1rem 0;
 }
 
 .kit-info .cta-button {
   background-color: #370751;
   color: #ffffff;
   padding: 0.8rem 1.5rem;
-  border: none;
   border-radius: 8px;
   font-size: 1.1rem;
-  cursor: pointer;
 }
 
 .kit-info .cta-button:hover {
