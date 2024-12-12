@@ -38,7 +38,7 @@ body {
 }
 
 .hero-content .cta-button {
-  margin-top: 1.5rem;
+  margin-top: 2rem; /* Cambia a un valor mayor si aún está muy cerca */
   padding: 1rem 2rem;
   background-color: #370751;
   color: #ffffff;
@@ -48,6 +48,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+
 }
 
 .hero-content .cta-button:hover {
