@@ -210,6 +210,34 @@ body {
   background-color: #5b2a87;
 }
 
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 50vh; /* Reduce la altura del carrusel en mobile */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%; /* Ajusta la imagen para llenar el espacio */
+    object-fit: cover; /* Mantiene el recorte de la imagen */
+  }
+
+  .carousel-control {
+    font-size: 1.5rem; /* Reduce el tamaño de los controles en mobile */
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 40vh; /* Altura aún más reducida */
+  }
+
+  .carousel-control {
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+
 
 /* Frase Inspiracional */
 .inspirational-phrase {
@@ -320,4 +348,5 @@ body {
 .social-links a img:hover {
   transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
 }
+
 
