@@ -106,24 +106,6 @@ body {
   line-height: 1.5;
 }
 
-/* Frase Inspiracional */
-.inspirational-phrase {
-  text-align: center; /* Centrar texto */
-  padding: 2rem;
-  background-color: #E89996; /* Fondo rosa claro */
-  color: #370751; /* Texto en morado oscuro */
-}
-
-.inspirational-phrase h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.inspirational-phrase p {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 /* Product Kit Section */
 .product-kit {
   background-color: #f7f4f9;
@@ -189,34 +171,6 @@ body {
   right: 0;
 }
 
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.feature-item {
-  background-color: #EFEBE0;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.feature-item h3 {
-  color: #370751;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.feature-item p {
-  color: #5b2a87;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
 .product-cta {
   text-align: center;
   margin-top: 2rem;
@@ -241,6 +195,24 @@ body {
 
 .product-cta .cta-button:hover {
   background-color: #5b2a87;
+}
+
+/* Frase Inspiracional */
+.inspirational-phrase {
+  text-align: center; /* Centrar texto */
+  padding: 2rem;
+  background-color: #E89996; /* Fondo rosa claro */
+  color: #370751; /* Texto en morado oscuro */
+}
+
+.inspirational-phrase h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.inspirational-phrase p {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 
