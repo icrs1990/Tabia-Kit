@@ -133,7 +133,7 @@ body {
   position: relative;
   width: 100%; /* Asegúrate de que ocupe todo el ancho */
   overflow: hidden;
-  height: 70vh; /* Altura ajustada */
+  height: 80vh; /* Altura ajustada */
   margin: 0; /* Elimina márgenes */
   padding: 0; /* Elimina padding */
 }
