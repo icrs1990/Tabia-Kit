@@ -35,14 +35,14 @@ body {
 
 .hero-content p {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #370751;
   margin-bottom: 1.5rem;
 }
 
 .hero-content .cta-button {
   padding: 1rem 2rem;
   background-color: #370751;
-  color: #ffffff;
+  color: #EFEBE0;
   border: none;
   border-radius: 8px;
   font-size: 1.2rem;
@@ -173,7 +173,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: #EFEBE0;
   border: none;
   font-size: 2rem;
   padding: 0.5rem 1rem;
@@ -198,7 +198,7 @@ body {
 }
 
 .feature-item {
-  background-color: #ffffff;
+  background-color: #EFEBE0;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -231,7 +231,7 @@ body {
 .product-cta .cta-button {
   padding: 0.8rem 1.5rem;
   background-color: #370751;
-  color: #ffffff;
+  color: #EFEBE0;
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
