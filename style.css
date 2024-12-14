@@ -133,23 +133,26 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: auto; /* Cambiar altura fija por altura automática */
+  height: auto; /* Ajustar altura automáticamente */
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%; /* Ajusta esto si hay más o menos elementos en el carrusel */
+  width: 100%; /* Cambia a 100% para evitar estiramientos */
 }
 
 .carousel-item {
   flex: 1 0 100%;
+  display: flex; /* Asegura que el contenido dentro del item se alinee correctamente */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
 }
 
 .carousel-item img {
-  width: 100%; /* La imagen se adapta al ancho del contenedor */
-  height: auto; /* Ajusta la altura proporcionalmente */
-  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
+  max-height: 70vh; /* Ajusta la altura máxima a la altura del hero */
+  object-fit: cover; /* Recorta la imagen si es necesario para que se vea bien */
   display: block;
 }
 
