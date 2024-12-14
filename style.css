@@ -124,6 +124,7 @@ body {
   color: #370751;
   margin-bottom: 2rem;
 }
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -170,6 +171,7 @@ body {
 .carousel-control.next {
   right: 0;
 }
+
 
 .product-cta {
   text-align: center;
