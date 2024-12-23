@@ -1,15 +1,9 @@
-let currentIndex = 0;
+let currentSlide = 0;
 
 function moveSlide(direction) {
-  const carousel = document.querySelector('.carousel');
+  const slides = document.querySelector('.carousel');
   const totalSlides = document.querySelectorAll('.carousel-item').length;
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1;
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0;
-  }
-
-  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
