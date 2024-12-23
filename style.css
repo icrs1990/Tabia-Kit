@@ -20,7 +20,6 @@ body {
   height: 100vh; /* Altura ajustada al hero */
   margin: 0;
   padding: 0;
-  background-color: #370751; /* Fondo morado para consistencia */
 }
 
 .carousel {
