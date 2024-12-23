@@ -12,14 +12,12 @@ body {
   line-height: 1.6;
 }
 
-
-/* Hero (Carrusel) */
 /* Hero (Carrusel) */
 .carousel-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 70vh; /* Ajusta la altura del hero */
+  height: 80vh; /* Ajusta la altura del hero */
 }
 
 .carousel {
