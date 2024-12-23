@@ -18,14 +18,18 @@ body {
   width: 100%;
   overflow: hidden;
   height: 100vh; /* Ajusta la altura según lo que necesites */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina padding */
 }
+
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%;
-  height: 100%; /* Ajusta la altura al contenedor */
+  width: 100%; /* Cambia el ancho a 100% para ajustarse a la página */
+  height: 100%; /* Asegura que se mantenga en proporción */
 }
+
 
 .carousel-item {
   flex: 1 0 100%;
@@ -34,7 +38,7 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: 100%;
+  height: 100%; /* Asegura que la imagen llene el espacio */
   object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
   display: block;
 }
@@ -59,17 +63,6 @@ body {
 .carousel-control.next {
   right: 0;
 }
-
-@media (max-width: 768px) {
-  .carousel-container {
-    height: 50vh; /* Reduce la altura en dispositivos más pequeños */
-  }
-
-  .carousel-item img {
-    object-fit: contain; /* Cambia el ajuste para evitar recortes excesivos en pantallas pequeñas */
-  }
-}
-
 
 
 /* Sección Sobre Tabia */
