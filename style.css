@@ -64,6 +64,24 @@ body {
   right: 0;
 }
 
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 50vh; /* Ajusta la altura del carrusel para pantallas pequeñas */
+  }
+
+  .carousel-item img {
+    height: auto; /* Mantén la proporción en dispositivos móviles */
+    max-height: 100%; /* Evita que exceda el contenedor */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+  }
+
+  .carousel-control {
+    font-size: 1.5rem; /* Reduce el tamaño de los controles */
+    padding: 0.3rem 0.8rem; /* Ajusta el tamaño de los botones */
+  }
+}
+
 
 /* Sección Sobre Tabia */
 .about-tabia {
