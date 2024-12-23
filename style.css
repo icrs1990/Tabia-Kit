@@ -17,25 +17,25 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 70vh; /* Mantén la altura proporcional */
+  height: 100vh; /* Ajusta la altura según lo que necesites */
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 300%;
-  height: 100%; /* El contenedor toma toda la altura */
+  height: 100%; /* Ajusta la altura al contenedor */
 }
 
 .carousel-item {
   flex: 1 0 100%;
-  height: 100%; /* Asegura que cada slide ocupe el 100% de la altura del contenedor */
+  height: 100%; /* Asegura que las imágenes llenen el contenedor */
 }
 
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta las imágenes para que llenen el contenedor */
+  object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
   display: block;
 }
 
