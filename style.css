@@ -17,14 +17,17 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 80vh; /* Ajusta la altura del hero */
+  height: 100vh; /* Altura ajustada al hero */
+  margin: 0;
+  padding: 0;
+  background-color: #370751; /* Fondo morado para consistencia */
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 300%;
-  height: 100%;
+  width: 100%;
+  height: 100%; /* Mantén la altura del contenedor */
 }
 
 .carousel-item {
@@ -34,9 +37,12 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Asegura que las imágenes se adapten al contenedor */
+  height: auto; /* Mantén la proporción original */
+  max-height: 100%; /* Ajusta para que no exceda el contenedor */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+  display: block;
 }
+
 
 .carousel-control {
   position: absolute;
