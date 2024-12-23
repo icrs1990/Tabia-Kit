@@ -198,8 +198,8 @@ body {
   gap: 2rem;
 }
 
-.product-item.reverse {
-  flex-direction: row-reverse; /* Cambia el orden para alternar */
+.product-image {
+  flex: 1;
 }
 
 .product-image img {
@@ -210,8 +210,13 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.product-image.align-right {
+  justify-content: flex-end; /* Alinea la imagen a la derecha */
+}
+
 .product-text {
   max-width: 600px;
+  flex: 1;
 }
 
 .product-text h2 {
@@ -247,15 +252,10 @@ body {
     text-align: center;
   }
 
-  .product-item.reverse {
-    flex-direction: column;
-  }
-
   .product-image img {
     max-width: 100%;
   }
 }
-
 
 /* Frase Inspiracional */
 .inspirational-phrase {
