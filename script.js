@@ -7,3 +7,17 @@ function moveSlide(direction) {
   slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
 
+document.addEventListener("scroll", () => {
+  const items = document.querySelectorAll(".product-item");
+  items.forEach((item) => {
+    const rect = item.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      item.style.transform = "translateY(0)";
+      item.style.opacity = "1";
+    } else {
+      item.style.transform = "translateY(20px)";
+      item.style.opacity = "0";
+    }
+  });
+});
+
