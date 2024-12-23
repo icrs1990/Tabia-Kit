@@ -12,51 +12,53 @@ body {
   line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
-  background-image: linear-gradient(rgba(232, 153, 150, 0.7), rgba(232, 153, 150, 0.7)), url('https://github.com/icrs1990/Tabia-Landing/blob/main/assets/Kit%20recuerdos.png?raw=true');
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
+/* Hero (Carrusel) */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 70vh; /* Ajusta la altura del hero */
+}
+
+.carousel {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+  height: 100%;
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: #370751;
-  margin-bottom: 1rem;
+.carousel-item {
+  flex: 1 0 100%;
+  height: 100%;
 }
 
-.hero-content p {
-  font-size: 1.5rem;
-  color: #370751;
-  margin-bottom: 1.5rem;
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes se adapten al contenedor */
 }
 
-.hero-content .cta-button {
-  margin-top: 1.5rem;
-  padding: 1rem 2rem;
-  background-color: #370751;
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none; /* Elimina el subrayado */
-  text-align: center; /* Asegura que el texto esté centrado */
+  z-index: 1000;
 }
 
-.cta-button:hover {
-  background-color: #5b2a87;
+.carousel-control.prev {
+  left: 0;
 }
+
+.carousel-control.next {
+  right: 0;
+}
+
 
 
 /* Sección Sobre Tabia */
