@@ -192,16 +192,28 @@ body {
   background-color: #F9F9F9; /* Fondo claro */
 }
 
-/* Contenido del kit */
+/* General Styles for Product Sections */
+.product-section {
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
 
-.product-item {
+.product-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-content.reverse {
+  flex-direction: row-reverse; /* Alterna la posición de imagen y texto */
 }
 
 .product-image {
   flex: 1;
+  text-align: center;
 }
 
 .product-image img {
@@ -209,15 +221,9 @@ body {
   max-width: 500px;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.product-image.align-right {
-  justify-content: flex-end; /* Alinea la imagen a la derecha */
 }
 
 .product-text {
-  max-width: 600px;
   flex: 1;
 }
 
@@ -230,28 +236,33 @@ body {
 .product-text p {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.btn {
+.cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #E89996;
-  color: #FFFFFF;
+  background-color: #e89996;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.btn:hover {
-  background-color: #370751;
+.cta-button:hover {
+  background-color: #d17a7a;
 }
 
-/* Responsividad */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .product-item {
+  .product-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .product-content.reverse {
+    flex-direction: column;
   }
 
   .product-image img {
