@@ -169,7 +169,7 @@ body {
   margin-top: 1.5rem;
   padding: 1rem 2rem;
   background-color: #370751;
-  color: #ffffff;
+  color: #EFEBE0;
   border: none;
   border-radius: 8px;
   font-size: 1.2rem;
@@ -195,7 +195,7 @@ body {
 /* General Styles for Product Sections */
 .product-section {
   padding: 4rem 1rem;
-  background-color: #fff;
+  background-color: #EFEBE0;
 }
 
 .product-content {
@@ -242,8 +242,8 @@ body {
 .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #e89996;
-  color: #fff;
+  background-color: #370751;
+  color: #EFEBE0;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
