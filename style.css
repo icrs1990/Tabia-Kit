@@ -136,14 +136,14 @@ body {
 
 /* Product Kit Section */
 .product-kit {
-  background-color: #E89996;
-  padding: 3rem 1.5rem;
-  text-align: center;
+  background-color: #E89996; /* Fondo para la sección del kit */
+  padding: 3rem 1.5rem; /* Espaciado general */
+  text-align: center; /* Centrado del texto */
 }
 
 .product-kit h2 {
   font-size: 2.5rem;
-  color: #370751;
+  color: #370751; /* Morado oscuro */
   margin-bottom: 1.5rem;
 }
 
@@ -153,7 +153,7 @@ body {
   margin-bottom: 2rem;
 }
 
-
+/* Botón CTA */
 .product-cta {
   text-align: center;
   margin-top: 2rem;
@@ -168,34 +168,35 @@ body {
 .product-cta .cta-button {
   margin-top: 1.5rem;
   padding: 1rem 2rem;
-  background-color: #370751;
-  color: #EFEBE0;
+  background-color: #370751; /* Morado oscuro */
+  color: #EFEBE0; /* Texto claro */
   border: none;
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none; /* Elimina el subrayado */
-  text-align: center; /* Asegura que el texto esté centrado */
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Elimina subrayado */
+  text-align: center;
 }
 
-.cta-button:hover {
-  background-color: #5b2a87;
+.product-cta .cta-button:hover {
+  background-color: #5b2a87; /* Color más claro al pasar el cursor */
 }
 
+/* Detalles del Producto */
 .product-details-alternating {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Columnas por defecto */
   gap: 3rem;
   padding: 2rem;
   background-color: #F9F9F9; /* Fondo claro */
 }
 
-/* General Styles for Product Sections */
+/* Estructura General de Productos */
 .product-section {
   padding: 4rem 1rem;
-  background-color: #EFEBE0;
+  background-color: #EFEBE0; /* Fondo para cada sección */
 }
 
 .product-content {
@@ -203,14 +204,15 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Ancho máximo de la sección */
+  margin: 0 auto; /* Centrado */
 }
 
 .product-content.reverse {
   flex-direction: row-reverse; /* Alterna la posición de imagen y texto */
 }
 
+/* Imagen del Producto */
 .product-image {
   flex: 1;
   text-align: center;
@@ -218,28 +220,30 @@ body {
 
 .product-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 500px; /* Ancho máximo */
   height: auto;
-  border-radius: 8px;
+  border-radius: 8px; /* Bordes redondeados */
 }
 
+/* Texto del Producto */
 .product-text {
   flex: 1;
+  text-align: left;
 }
 
 .product-text h2 {
   font-size: 2rem;
-  color: #370751;
+  color: #370751; /* Título en morado oscuro */
   margin-bottom: 1rem;
 }
 
 .product-text p {
   font-size: 1.2rem;
-  color: #555;
+  color: #555; /* Texto gris */
   margin-bottom: 1.5rem;
 }
 
-.cta-button {
+.product-text .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #370751;
@@ -250,25 +254,30 @@ body {
   transition: background-color 0.3s;
 }
 
-.cta-button:hover {
-  background-color: #d17a7a;
+.product-text .cta-button:hover {
+  background-color: #d17a7a; /* Color más claro al pasar el cursor */
 }
 
-/* Responsive Design */
+/* Diseño Responsive */
 @media (max-width: 768px) {
   .product-content {
-    flex-direction: column;
+    flex-direction: column; /* Cambia a columna para pantallas pequeñas */
     text-align: center;
   }
 
   .product-content.reverse {
-    flex-direction: column;
+    flex-direction: column; /* Cambia también la posición alternada */
   }
 
   .product-image img {
     max-width: 100%;
   }
+
+  .product-text {
+    text-align: center; /* Centra el texto en móviles */
+  }
 }
+
 
 /* Frase Inspiracional */
 .inspirational-phrase {
