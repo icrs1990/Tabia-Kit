@@ -1,15 +1,32 @@
+/* Variables Globales */
+:root {
+  --primary-color: #370751;
+  --secondary-color: #EFEBE0;
+  --accent-color: #E89996;
+  --text-color-light: #ffffff;
+  --text-color-dark: #555;
+  --font-family: "Isidora", sans-serif;
+}
+
 /* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Isidora, sans-serif;
+  font-family: var(--font-family);
 }
 
 body {
-  background-color: #370751;
-  color: #370751;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
   line-height: 1.6;
+}
+
+/* Reutilizable: Contenedor Centrador */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Hero (Carrusel) */
@@ -17,16 +34,14 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 100vh; /* Altura ajustada al hero */
-  margin: 0;
-  padding: 0;
+  height: 100vh;
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
-  height: 100%; /* Mantén la altura del contenedor */
+  height: 100%;
 }
 
 .carousel-item {
@@ -36,19 +51,18 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: auto; /* Mantén la proporción original */
-  max-height: 100%; /* Ajusta para que no exceda el contenedor */
-  object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
   display: block;
 }
-
 
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  color: var(--text-color-light);
   border: none;
   font-size: 2rem;
   padding: 0.5rem 1rem;
@@ -64,186 +78,63 @@ body {
   right: 0;
 }
 
-/* Ajustes para dispositivos móviles */
+/* Ajustes Responsivos */
 @media (max-width: 768px) {
   .carousel-container {
-    height: 50vh; /* Ajusta la altura del carrusel para pantallas pequeñas */
-  }
-
-  .carousel-item img {
-    height: auto; /* Mantén la proporción en dispositivos móviles */
-    max-height: 100%; /* Evita que exceda el contenedor */
-    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    height: 50vh;
   }
 
   .carousel-control {
-    font-size: 1.5rem; /* Reduce el tamaño de los controles */
-    padding: 0.3rem 0.8rem; /* Ajusta el tamaño de los botones */
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
   }
 }
 
-
-/* Sección Sobre Tabia */
-.about-tabia {
-  background-color: #EFEBE0; /* Fondo claro */
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-.about-content h2 {
-  color: #370751; /* Título en morado oscuro */
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-content p {
-  color: #370751; /* Texto en morado oscuro */
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Principios */
-.principles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  justify-items: center;
-}
-
-.principle-item {
-  text-align: center;
-}
-
-.principle-item img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 1rem;
-}
-
-.principle-item h3 {
-  color: #A439F7; /* Título en morado vibrante */
-  margin-bottom: 0.5rem;
-}
-
-.principle-item p {
-  color: #370751; /* Texto en morado oscuro */
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* Product Kit Section */
-.product-kit {
-  background-color: #EFEBE0;
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-.product-kit h2 {
-  font-size: 2.5rem;
-  color: #370751;
-  margin-bottom: 1.5rem;
-}
-
-.product-kit p {
-  font-size: 1.2rem;
-  color: #370751;
-  margin-bottom: 2rem;
-}
-
-
-.product-cta {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.product-cta p {
-  font-size: 1.2rem;
-  color: #370751;
-  margin-bottom: 1rem;
-}
-
-.product-cta .cta-button {
-  margin-top: 1.5rem;
-  padding: 1rem 2rem;
-  background-color: #370751;
-  color: #EFEBE0;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none; /* Elimina el subrayado */
-  text-align: center; /* Asegura que el texto esté centrado */
-}
-
-.cta-button:hover {
-  background-color: #5b2a87;
-}
-
-.product-details-alternating {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 2rem;
-  background-color: #F9F9F9; /* Fondo claro */
-}
-
-/* General Styles for Product Sections */
-.product-section {
+/* Secciones Generales */
+.section {
   padding: 4rem 1rem;
-  background-color: #EFEBE0;
+  background-color: var(--secondary-color);
 }
 
+/* Product Section */
 .product-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .product-content.reverse {
-  flex-direction: row-reverse; /* Alterna la posición de imagen y texto */
-}
-
-.product-image {
-  flex: 1;
-  text-align: center;
+  flex-direction: row-reverse;
 }
 
 .product-image img {
-  width: 100%;
   max-width: 500px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 .product-text {
-  flex: 1;
+  max-width: 600px;
 }
 
 .product-text h2 {
   font-size: 2rem;
-  color: #370751;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
 .product-text p {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--text-color-dark);
   margin-bottom: 1.5rem;
 }
 
 .cta-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #370751;
-  color: #EFEBE0;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -251,113 +142,15 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #d17a7a;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .product-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .product-content.reverse {
-    flex-direction: column;
-  }
-
-  .product-image img {
-    max-width: 100%;
-  }
-}
-
-/* Frase Inspiracional */
-.inspirational-phrase {
-  text-align: center; /* Centrar texto */
-  padding: 2rem;
-  background-color: #E89996; /* Fondo rosa claro */
-  color: #370751; /* Texto en morado oscuro */
-}
-
-.inspirational-phrase h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.inspirational-phrase p {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-
-/* Sección El Equipo */
-.team-section {
-  background-color: #370751; /* Fondo morado oscuro */
-  color: #EFEBE0; /* Texto claro */
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-
-.team-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #EFEBE0;
-}
-
-.team {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.team-member {
-  text-align: center;
-  max-width: 300px;
-}
-
-.team-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Convierte la imagen en un círculo */
-  object-fit: cover;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega un leve sombreado */
-}
-
-.team-member h3 {
-  font-size: 1.5rem;
-  color: #E89996; /* Título en rosa */
-  margin-bottom: 0.5rem;
-}
-
-.team-member p {
-  font-size: 1rem;
-  color: #EFEBE0; /* Texto claro */
-  line-height: 1.5;
-}
-
-/* Sección del Logo */
-.logo-section {
-  background-color: #EFEBE0; /* Fondo claro */
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.logo-section img {
-  width: 200px;
-  height: auto;
-  display: block; /* Centra la imagen si se usa junto con margin auto */
-  margin: auto;   /* Centra horizontalmente */
+  background-color: #5b2a87;
 }
 
 /* Footer */
 .footer {
-  background-color: #370751; /* Fondo morado oscuro */
-  color: #EFEBE0; /* Texto claro */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
   padding: 1.5rem 0;
-  font-size: 0.9rem;
-  margin-top: 2rem;
 }
 
 .footer p {
@@ -370,14 +163,15 @@ body {
   gap: 1.5rem;
 }
 
-.social-links a img {
+.social-links img {
   width: 30px;
   height: 30px;
   transition: transform 0.3s;
 }
 
-.social-links a img:hover {
-  transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+.social-links img:hover {
+  transform: scale(1.2);
 }
+
 
 
